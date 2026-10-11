@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f5f2ed">
+  <title>ArthaCore — Enterprise Payroll System</title>
+  <link rel="icon" type="image/svg+xml" href="./assets/arthacore-mark.svg">
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar" id="sidebar">
+      <a class="brand" href="#dashboard" aria-label="ArthaCore Dashboard">
+        <img class="brand-mark" src="./assets/arthacore-mark.svg" alt="">
+        <span class="brand-copy"><strong>ArthaCore</strong><small>Enterprise Payroll System</small><small class="brand-company" id="workspace-company">SINGLE-COMPANY WORKSPACE</small></span>
+      </a>
+
+      <div class="workspace-label">WORKSPACE</div>
+      <nav class="navigation" aria-label="Navigasi utama">
+        <a class="nav-link active" href="#dashboard" data-page="dashboard">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="3.5" width="7" height="7" rx="1.5"/><rect x="13.5" y="3.5" width="7" height="4" rx="1.5"/><rect x="13.5" y="10.5" width="7" height="10" rx="1.5"/><rect x="3.5" y="13.5" width="7" height="7" rx="1.5"/></svg>
+          <span>Dashboard</span>
+        </a>
+        <div class="nav-section-label">DATA MASTER</div>
+        <a class="nav-link" href="#employees" data-page="employees">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="9" cy="8" r="3.5"/><path d="M2.8 20a6.2 6.2 0 0 1 12.4 0M16 5.2a3.5 3.5 0 0 1 0 6.8m1.4 2.2a5.6 5.6 0 0 1 3.8 5.3"/></svg>
+          <span>Karyawan</span><span class="nav-count" id="employee-nav-count">—</span>
+        </a>
+        <a class="nav-link" href="#departments" data-page="departments">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M8 8h8M8 12h8M8 16h4"/></svg>
+          <span>Departemen</span>
+        </a>
+        <a class="nav-link" href="#positions" data-page="positions">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20V8l8-4 8 4v12M8 20v-6h8v6M9 9h.01M15 9h.01"/></svg>
+          <span>Jabatan</span>
+        </a>
+        <a class="nav-link" href="#payrolls" data-page="payrolls">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="15" rx="2"/><path d="M3 10h18m-13 5h4M7 2v3m10-3v3"/></svg>
+          <span>Penggajian</span>
+        </a>
+      </nav>
+
+      <div class="sidebar-bottom">
+        <button class="nav-link settings-link" id="settings-button" type="button">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="3"/><path d="m19.4 15 .1.1a1.7 1.7 0 1 1-2.4 2.4l-.1-.1a1.7 1.7 0 0 0-2.9 1.2v.2a1.7 1.7 0 1 1-3.4 0v-.2a1.7 1.7 0 0 0-2.9-1.2l-.1.1a1.7 1.7 0 1 1-2.4-2.4l.1-.1a1.7 1.7 0 0 0-1.2-2.9H4a1.7 1.7 0 1 1 0-3.4h.2a1.7 1.7 0 0 0 1.2-2.9l-.1-.1a1.7 1.7 0 1 1 2.4-2.4l.1.1a1.7 1.7 0 0 0 2.9-1.2V2a1.7 1.7 0 1 1 3.4 0v.2a1.7 1.7 0 0 0 2.9 1.2l.1-.1a1.7 1.7 0 1 1 2.4 2.4l-.1.1a1.7 1.7 0 0 0 1.2 2.9h.2a1.7 1.7 0 1 1 0 3.4h-.2a1.7 1.7 0 0 0-1.2 2.9Z"/></svg>
+          <span>Pengaturan perusahaan</span>
+        </button>
+        <div class="user-profile">
+          <div class="avatar">AC</div><div class="user-copy"><strong>Administrator</strong><small>HR &amp; Finance</small></div>
+          <span class="user-menu">•••</span>
+        </div>
+        <div class="sidebar-attribution">Fakultas Ekonomika dan Bisnis<br>Universitas Diponegoro</div>
+      </div>
+    </aside>
+
+    <main class="main-area">
+      <header class="topbar">
+        <div class="topbar-left">
+          <button class="icon-button mobile-menu" id="mobile-menu" type="button" aria-label="Buka navigasi">☰</button>
+          <div class="breadcrumb"><span>ArthaCore</span><span class="crumb-divider">/</span><strong id="breadcrumb-current">Dashboard</strong></div>
+        </div>
+        <div class="topbar-actions">
+          <span class="today-label" id="today-label"></span>
+          <button class="icon-button notification-button" type="button" aria-label="Notifikasi"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18 9a6 6 0 0 0-12 0c0 7-3 7-3 9h18c0-2-3-2-3-9m-8 12h4"/></svg><i></i></button>
+          <div class="topbar-avatar">AC</div>
+        </div>
+      </header>
+
+      <div class="page-content">
+        <section class="page-view active" id="page-dashboard">
+          <div class="page-heading dashboard-heading">
+            <div><div class="eyebrow"><span class="eyebrow-line"></span> RUANG KERJA HR &amp; FINANCE</div><h1>Selamat datang di <span>ArthaCore</span></h1><p>Ringkasan pengelolaan karyawan dan penggajian perusahaan Anda.</p></div>
+            <button class="button button-primary" id="dashboard-payroll-action" type="button"><span class="button-plus">＋</span> Buat penggajian</button>
+          </div>
+          <div class="welcome-banner">
+            <img class="banner-photo" src="./assets/payroll-team.jpg" alt="Dokumen perencanaan keuangan dan kalkulator di meja kerja" fetchpriority="high">
+            <div class="banner-content"><div class="banner-kicker"><span class="banner-sparkle">✦</span> THE ARTHACORE PRIVATE DESK</div><h2>Payroll yang tertata.<br><em>Tim yang berdaya.</em></h2><p>Ruang kerja terpadu untuk mengelola talenta, kompensasi, dan operasional tim dengan percaya diri.</p><div class="banner-actions"><button class="banner-primary" data-go="employees" type="button">Jelajahi karyawan <span>↗</span></button><span class="banner-note"><i></i> Data Anda, terorganisasi</span></div></div>
+            <div class="hero-payroll-card" aria-label="Pratinjau ringkasan penggajian"><div class="hero-card-head"><img class="hero-card-icon" src="./assets/arthacore-mark.svg" alt=""><span><strong>Ringkasan payroll</strong><small>Periode berjalan</small></span><i>•••</i></div><div class="hero-card-total" id="hero-payroll-total">Rp 0</div><div class="hero-card-divider"></div><div class="hero-card-foot"><span class="hero-avatar-stack" aria-hidden="true"><i>HR</i><i>FN</i><i>+</i></span><span id="hero-payroll-caption">Terintegrasi dalam satu ruang kerja</span></div></div>
+          </div>
+          <section class="company-showcase" aria-label="Identitas perusahaan">
+            <div class="showcase-heading"><span>PERUSAHAAN PILIHAN DI INDONESIA</span></div>
+            <div class="company-stage" id="company-stage">
+              <div class="company-marquee" id="company-marquee" role="img" aria-label="Identitas perusahaan Indonesia bergerak berulang">
+                <div class="company-track" id="company-track" aria-hidden="true"></div>
+              </div>
+            </div>
+          </section>
+          <div class="section-title-row"><div><h2>Ringkasan perusahaan</h2><p>Statistik terkini dari data yang tersimpan.</p></div><span class="live-label"><i></i> DATA TERKINI</span></div>
+          <div class="stats-grid">
+            <article class="stat-card"><div class="stat-top"><span class="stat-label">Total karyawan</span><span class="stat-icon icon-sand"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="9" cy="8" r="3.5"/><path d="M2.8 20a6.2 6.2 0 0 1 12.4 0m1-14.8a3.5 3.5 0 0 1 0 6.8m1.4 2.2a5.6 5.6 0 0 1 3.8 5.3"/></svg></span></div><div class="stat-value" id="stat-employees">—</div><div class="stat-foot"><span class="stat-foot-icon">↗</span> Karyawan terdaftar</div><div class="stat-decoration"></div></article>
+            <article class="stat-card"><div class="stat-top"><span class="stat-label">Departemen</span><span class="stat-icon icon-green"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M8 8h8M8 12h8M8 16h4"/></svg></span></div><div class="stat-value" id="stat-departments">—</div><div class="stat-foot"><span class="stat-foot-icon">↗</span> Unit organisasi</div><div class="stat-decoration"></div></article>
+            <article class="stat-card"><div class="stat-top"><span class="stat-label">Posisi jabatan</span><span class="stat-icon icon-blue"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20V8l8-4 8 4v12M8 20v-6h8v6"/></svg></span></div><div class="stat-value" id="stat-positions">—</div><div class="stat-foot"><span class="stat-foot-icon">↗</span> Peran tersedia</div><div class="stat-decoration"></div></article>
+            <article class="stat-card"><div class="stat-top"><span class="stat-label">Payroll bulan ini</span><span class="stat-icon icon-rose"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="15" rx="2"/><path d="M3 10h18m-13 5h4"/></svg></span></div><div class="stat-value" id="stat-payrolls">—</div><div class="stat-foot"><span class="stat-foot-icon">↗</span> Periode berjalan</div><div class="stat-decoration"></div></article>
+          </div>
+          <section class="dashboard-analytics" aria-label="Tren dan analisis perusahaan">
+            <article class="panel analytics-panel payroll-trend-panel">
+              <div class="panel-heading"><div><h2>Tren penggajian</h2><p>Total gaji bersih per bulan · 6 bulan terakhir</p></div><span class="analytics-icon">↗</span></div>
+              <div class="trend-summary"><strong id="payroll-trend-total">Rp0</strong><span id="payroll-trend-change" class="trend-badge">Belum ada tren</span></div>
+              <div id="payroll-trend-chart" class="chart-container"></div>
+            </article>
+            <article class="panel analytics-panel workforce-panel">
+              <div class="panel-heading"><div><h2>Komposisi karyawan</h2><p>Jumlah karyawan aktif per departemen</p></div><span class="analytics-icon workforce-icon">▦</span></div>
+              <div id="workforce-trend" class="workforce-summary"></div>
+              <div id="workforce-chart" class="workforce-chart"></div>
+            </article>
+          </section>
+          <div class="dashboard-bottom">
+            <section class="panel recent-panel"><div class="panel-heading"><div><h2>Penggajian terbaru</h2><p>Aktivitas payroll yang baru dicatat</p></div><button class="text-link" data-go="payrolls" type="button">Lihat semua <span>→</span></button></div><div id="recent-payrolls" class="recent-list"></div></section>
+            <section class="panel quick-panel"><div class="panel-heading"><div><h2>Akses cepat</h2><p>Kelola data utama dengan mudah</p></div><span class="quick-sparkle">✦</span></div><div class="quick-actions"><button class="quick-action" data-go="employees" type="button"><span class="quick-icon quick-employee">＋</span><span><strong>Tambah karyawan</strong><small>Daftarkan anggota tim baru</small></span><b>→</b></button><button class="quick-action" data-go="departments" type="button"><span class="quick-icon quick-department">▦</span><span><strong>Atur departemen</strong><small>Kelola struktur organisasi</small></span><b>→</b></button><button class="quick-action" data-go="payrolls" type="button"><span class="quick-icon quick-payroll">↗</span><span><strong>Catat penggajian</strong><small>Buat catatan payroll periode ini</small></span><b>→</b></button></div></section>
+          </div>
+          <div class="dashboard-footer"><span>© <span id="current-year"></span> ArthaCore · Payroll Perusahaan</span><span>Enterprise Payroll System <b>✦</b></span></div>
+        </section>
+
+        <section class="page-view" id="page-employees">
+          <div class="page-heading"><div><div class="eyebrow"><span class="eyebrow-line"></span> DATA MASTER</div><h1>Data <span>karyawan</span></h1><p>Kelola informasi dan status karyawan perusahaan.</p></div><button class="button button-primary" data-create="employees" type="button"><span class="button-plus">＋</span> Tambah karyawan</button></div>
+          <div class="list-summary" id="employees-summary"></div><img class="master-image" src="./assets/master-employees.jpg" alt="Tim profesional berkolaborasi di kantor" loading="lazy"><section class="panel table-panel"><div class="table-toolbar"><div class="search-field"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.8" cy="10.8" r="6.8"/><path d="m16 16 5 5"/></svg><input type="search" data-search="employees" placeholder="Cari nama, kode, perusahaan, atau departemen..." aria-label="Cari karyawan"></div><button class="filter-button" type="button" data-refresh><span>↻</span> Muat ulang</button></div><div class="table-wrap"><table><thead><tr><th>KARYAWAN</th><th>PERUSAHAAN</th><th>DEPARTEMEN</th><th>JABATAN</th><th>TANGGAL BERGABUNG</th><th>STATUS</th><th>GAJI POKOK</th><th></th></tr></thead><tbody id="employees-table"></tbody></table></div></section>
+        </section>
+
+        <section class="page-view" id="page-departments">
+          <div class="page-heading"><div><div class="eyebrow"><span class="eyebrow-line"></span> DATA MASTER</div><h1>Data <span>departemen</span></h1><p>Atur struktur dan unit organisasi perusahaan.</p></div><button class="button button-primary" data-create="departments" type="button"><span class="button-plus">＋</span> Tambah departemen</button></div>
+          <div class="list-summary" id="departments-summary"></div>
+          <section class="panel table-panel department-panel">
+            <div class="table-toolbar"><div class="search-field"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.8" cy="10.8" r="6.8"/><path d="m16 16 5 5"/></svg><input type="search" data-search="departments" placeholder="Cari nama atau kode departemen..." aria-label="Cari departemen"></div><button class="filter-button" type="button" data-refresh><span>↻</span> Muat ulang</button></div>
+            <div class="department-grid" id="departments-grid"></div>
+          </section>
+        </section>
+
+        <section class="page-view" id="page-positions">
+          <div class="page-heading"><div><div class="eyebrow"><span class="eyebrow-line"></span> DATA MASTER</div><h1>Data <span>jabatan</span></h1><p>Kelola tingkatan posisi dan standar kompensasi.</p></div><button class="button button-primary" data-create="positions" type="button"><span class="button-plus">＋</span> Tambah jabatan</button></div>
+          <div class="list-summary" id="positions-summary"></div><img class="master-image" src="./assets/master-positions.jpg" alt="Rekan kerja berdiskusi tentang jenjang peran profesional" loading="lazy"><section class="panel table-panel"><div class="table-toolbar"><div class="search-field"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.8" cy="10.8" r="6.8"/><path d="m16 16 5 5"/></svg><input type="search" data-search="positions" placeholder="Cari nama jabatan atau grade..." aria-label="Cari jabatan"></div><button class="filter-button" type="button" data-refresh><span>↻</span> Muat ulang</button></div><div class="table-wrap"><table><thead><tr><th>NAMA JABATAN</th><th>GRADE</th><th>GAJI POKOK</th><th>TUNJANGAN</th><th>KARYAWAN</th><th></th></tr></thead><tbody id="positions-table"></tbody></table></div></section>
+        </section>
+
+        <section class="page-view" id="page-payrolls">
+          <div class="page-heading"><div><div class="eyebrow"><span class="eyebrow-line"></span> DATA MASTER</div><h1>Data <span>penggajian</span></h1><p>Kelola catatan penggajian dan status pembayaran.</p></div><button class="button button-primary" data-create="payrolls" type="button"><span class="button-plus">＋</span> Buat penggajian</button></div>
+          <div class="list-summary" id="payrolls-summary"></div><img class="master-image" src="./assets/master-payroll.jpg" alt="Dokumen perhitungan payroll dan kalkulator keuangan" loading="lazy"><section class="panel table-panel"><div class="table-toolbar"><div class="search-field"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.8" cy="10.8" r="6.8"/><path d="m16 16 5 5"/></svg><input type="search" data-search="payrolls" placeholder="Cari nama karyawan atau periode..." aria-label="Cari penggajian"></div><button class="filter-button" type="button" data-refresh><span>↻</span> Muat ulang</button></div><div class="table-wrap"><table><thead><tr><th>KARYAWAN</th><th>PERIODE</th><th>GAJI POKOK</th><th>TUNJANGAN</th><th>POTONGAN</th><th>GAJI BERSIH</th><th>STATUS</th><th>AKSI</th></tr></thead><tbody id="payrolls-table"></tbody></table></div></section>
+        </section>
+      </div>
+    </main>
+  </div>
+
+  <div class="modal-backdrop" id="modal-backdrop" aria-hidden="true">
+    <section class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+      <div class="modal-header"><div><div class="eyebrow"><span class="eyebrow-line"></span> ARTHACORE</div><h2 id="modal-title">Pengaturan perusahaan</h2><p id="modal-description">Atur workspace untuk satu perusahaan dan project Supabase-nya.</p></div><button class="modal-close" type="button" aria-label="Tutup">×</button></div>
+      <form id="record-form"><div class="modal-body" id="modal-fields"></div><div class="modal-error" id="modal-error" role="alert"></div><div class="modal-footer"><button class="button button-quiet" type="button" id="cancel-modal">Batal</button><button class="button button-primary" type="submit" id="save-modal">Simpan</button></div></form>
+    </section>
+  </div>
+  <main class="payslip-print" id="payslip-print" aria-label="Slip gaji untuk dicetak"></main>
+  <div class="toast-region" id="toast-region" aria-live="polite"></div>
+  <script src="./config.js"></script>
+  <script src="./app.js"></script>
+</body>
+</html>
