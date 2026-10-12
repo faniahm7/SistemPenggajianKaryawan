@@ -30,16 +30,19 @@
 
 ---
 
-## 👩‍💻 Identitas Penyusun
+## 👩‍🎓 Identitas Penyusun
 
 <div align="center">
 
 | | |
 |---|---|
 | **Nama** | **FANIA HIDAYATUL MUSTAFIDAH** |
-| **Proyek** | ArthaCore — Enterprise Payroll System |
-| **Kategori** | Sistem Informasi HR & Finance |
-| **Fokus** | Manajemen Karyawan & Penggajian |
+| **NIM** | 12030124130178 |
+| **Mata Kuliah / Kelas** | Pengkodean dan Pemrograman / D |
+| **Dosen Pengampu** | Dr. Totok Dewayanto, S.E., M.Si., Akt., CA |
+| **Program Studi** | S1 Akuntansi |
+| **Fakultas** | Ekonomika dan Bisnis |
+| **Universitas** | Diponegoro |
 
 </div>
 
@@ -58,6 +61,8 @@
 **ArthaCore** adalah sistem penggajian karyawan (payroll system) berbasis web yang dirancang untuk memudahkan tim **HR & Finance** dalam mengelola seluruh siklus administrasi karyawan — mulai dari pendataan karyawan, struktur departemen, tingkatan jabatan, hingga penerbitan dan pemantauan payroll bulanan.
 
 Sistem ini menampilkan data secara **real-time** dengan tampilan dashboard yang informatif, sehingga pengguna dapat dengan cepat mengetahui kondisi perusahaan: berapa karyawan aktif, berapa departemen yang berjalan, posisi apa saja yang tersedia, dan bagaimana tren penggajian beberapa bulan terakhir.
+
+Proyek ini dikembangkan sebagai bagian dari mata kuliah **Pengkodean dan Pemrograman** dengan fokus pada implementasi struktur data keuangan dan integritas data penggajian.
 
 ---
 
