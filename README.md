@@ -1,92 +1,176 @@
-# ArthaCore — Enterprise Payroll System
+<div align="center">
 
-> Sistem penggajian karyawan berbasis web yang modern, rapi, dan siap pakai untuk kebutuhan HR & Finance.
+<img src="https://img.shields.io/badge/-A-BF9E5F?style=for-the-badge&labelColor=142D4C" height="70" />
 
-![Status](https://img.shields.io/badge/status-active-brightgreen)
-![Platform](https://img.shields.io/badge/platform-web-blue)
-![Made with](https://img.shields.io/badge/made%20with-HTML%20%7C%20CSS%20%7C%20JS-orange)
-![Author](https://img.shields.io/badge/author-Fania%20Hidayatul%20Mustafidah-purple)
+# 💼 ArthaCore
+### Enterprise Payroll System
 
----
+**Sistem penggajian karyawan berbasis web untuk mengelola data karyawan, struktur departemen, jabatan, dan siklus payroll bulanan secara terpusat dan real-time.**
 
-## 🌐 Live Website
+<br>
 
-🔗 **Akses Sistem Penggajian:**  
-👉 [https://faniahm7.github.io/SistemPenggajianKaryawan/](https://faniahm7.github.io/SistemPenggajianKaryawan/)
+<a href="https://faniahm7.github.io/SistemPenggajianKaryawan/">
+  <img src="https://img.shields.io/badge/🌐_KLIK_DI_SINI_UNTUK_BUKA_SISTEM-BF9E5F?style=for-the-badge&labelColor=142D4C&logoColor=white" height="45" />
+</a>
 
-> Klik link di atas untuk langsung mencoba **ArthaCore — Enterprise Payroll System** secara online.
+<br><br>
 
----
+[![HTML5](https://img.shields.io/badge/HTML5-142D4C?style=for-the-badge&logo=html5&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/HTML)
+[![CSS3](https://img.shields.io/badge/CSS3-BF9E5F?style=for-the-badge&logo=css3&logoColor=142D4C)](https://developer.mozilla.org/en-US/docs/Web/CSS)
+[![JavaScript](https://img.shields.io/badge/JavaScript-7A9478?style=for-the-badge&logo=javascript&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+[![GitHub Pages](https://img.shields.io/badge/GitHub_Pages-BF9E5F?style=for-the-badge&logo=github&logoColor=142D4C)](https://pages.github.com/)
 
-## Tentang Proyek
+<br>
 
-**ArthaCore** adalah aplikasi Sistem Penggajian Karyawan yang dirancang untuk membantu tim **HR & Finance** dalam mengelola data karyawan, departemen, jabatan, hingga proses payroll bulanan secara terpusat.
+![Status](https://img.shields.io/badge/Status-Active-BF9E5F?style=flat-square&labelColor=142D4C)
+![Snapshot](https://img.shields.io/badge/Snapshot-12_Oktober_2026-7A9478?style=flat-square&labelColor=142D4C)
+![License](https://img.shields.io/badge/License-Internal-142D4C?style=flat-square)
 
-Tampilan dibuat bersih, profesional, dan mudah dipahami — cocok untuk perusahaan yang ingin beralih dari pencatatan manual ke sistem digital.
-
----
-
-## Fitur Utama
-
-- **Dashboard Ringkasan Perusahaan**
-  Menampilkan statistik total karyawan, departemen, posisi jabatan, dan payroll bulan berjalan.
-
-- **Tren Penggajian**
-  Grafik total gaji bersih per bulan selama 6 bulan terakhir.
-
-- **Komposisi Karyawan**
-  Visualisasi jumlah karyawan aktif per departemen.
-
-- **Data Karyawan**
-  Kelola informasi karyawan: perusahaan, departemen, jabatan, tanggal bergabung, status, dan gaji pokok.
-
-- **Data Departemen**
-  Atur struktur dan unit organisasi perusahaan.
-
-- **Data Jabatan**
-  Kelola grade, gaji pokok, tunjangan, dan jumlah karyawan per posisi.
-
-- **Data Penggajian**
-  Catat dan pantau status pembayaran gaji: *Dibayarkan*, *Menunggu*, atau *Draft*.
+</div>
 
 ---
 
-## Tech Stack
+## 👩‍💻 Identitas Penyusun
 
-| Komponen | Keterangan |
-|----------|------------|
-| Struktur | HTML5 |
-| Styling  | CSS3 |
-| Interaksi | JavaScript |
-| Hosting  | GitHub Pages |
+<div align="center">
 
----
+| | |
+|---|---|
+| **Nama** | **FANIA HIDAYATUL MUSTAFIDAH** |
+| **Proyek** | ArthaCore — Enterprise Payroll System |
+| **Kategori** | Sistem Informasi HR & Finance |
+| **Fokus** | Manajemen Karyawan & Penggajian |
 
-## Struktur Halaman
-
-1. **Dashboard** — Ringkasan perusahaan & grafik
-2. **Data Karyawan** — Daftar & status karyawan
-3. **Data Departemen** — Unit organisasi
-4. **Data Jabatan** — Grade & kompensasi
-5. **Data Penggajian** — Riwayat & status payroll
+</div>
 
 ---
 
-## Preview
+<div align="center">
 
-🔗 **Live Demo:** [https://faniahm7.github.io/SistemPenggajianKaryawan/](https://faniahm7.github.io/SistemPenggajianKaryawan/)
+### 💼 *"Kelola karyawan, kuasai payroll, raih efisiensi."*
 
-> Buka tautan di atas untuk melihat tampilan langsung dari sistem ArthaCore.
+</div>
 
 ---
 
-## Cara Menjalankan
+## 📖 Tentang Proyek
 
-```bash
-# Clone repositori
-git clone https://github.com/faniahm7/SistemPenggajianKaryawan.git
+**ArthaCore** adalah sistem penggajian karyawan (payroll system) berbasis web yang dirancang untuk memudahkan tim **HR & Finance** dalam mengelola seluruh siklus administrasi karyawan — mulai dari pendataan karyawan, struktur departemen, tingkatan jabatan, hingga penerbitan dan pemantauan payroll bulanan.
 
-# Masuk ke folder
-cd SistemPenggajianKaryawan
+Sistem ini menampilkan data secara **real-time** dengan tampilan dashboard yang informatif, sehingga pengguna dapat dengan cepat mengetahui kondisi perusahaan: berapa karyawan aktif, berapa departemen yang berjalan, posisi apa saja yang tersedia, dan bagaimana tren penggajian beberapa bulan terakhir.
 
-# Buka file index.html di browser
+---
+
+## ✨ Fitur Utama
+
+<table>
+<tr>
+<td width="50%">
+
+### 📊 Dashboard
+Ringkasan perusahaan: total karyawan, departemen, posisi jabatan, dan payroll bulan berjalan dalam satu tampilan.
+
+### 📈 Tren Penggajian
+Grafik total gaji bersih per bulan selama 6 bulan terakhir untuk memantau fluktuasi biaya tenaga kerja.
+
+### 🥧 Komposisi Karyawan
+Visualisasi jumlah karyawan aktif per departemen — memudahkan analisis distribusi SDM.
+
+</td>
+<td width="50%">
+
+### 👥 Data Karyawan
+Manajemen lengkap data karyawan: perusahaan, departemen, jabatan, tanggal bergabung, status, dan gaji pokok.
+
+### 🏢 Data Departemen
+Pengelolaan struktur dan unit organisasi perusahaan.
+
+### 🧑‍💼 Data Jabatan
+Pengaturan grade, gaji pokok, tunjangan, dan jumlah karyawan per posisi.
+
+### 💰 Data Penggajian
+Pencatatan payroll dengan status pembayaran: **Dibayarkan**, **Menunggu**, atau **Draft**.
+
+</td>
+</tr>
+</table>
+
+---
+
+## 🎨 Tema & Desain
+
+Sistem ini menggunakan palet warna yang mencerminkan identitas **ArthaCore** — profesional, tegas, dan terpercaya.
+
+| Warna | Kode | Penggunaan |
+|---|---|---|
+| 🎨 **Navy** | `#142D4C` | Header, judul, tabel header |
+| 🏆 **Gold** | `#BF9E5F` | Aksen, highlight, badge |
+| 🌿 **Sage** | `#7A9478` | Status aktif, indikator positif |
+| ☁️ **Cream** | `#FAF8F4` | Background halaman |
+
+---
+
+## 🛠️ Teknologi
+
+| Layer | Teknologi |
+|---|---|
+| **Frontend** | HTML5, CSS3, Vanilla JavaScript |
+| **Hosting** | GitHub Pages |
+| **Visualisasi** | Chart & grafik (custom) |
+| **Data** | Statis (siap dikembangkan ke API) |
+
+---
+
+## 🗄️ Arsitektur Data
+
+### Diagram Relasi Entitas (ERD)
+
+```mermaid
+erDiagram
+    PERUSAHAAN ||--o{ KARYAWAN : "mempekerjakan"
+    DEPARTEMEN ||--o{ KARYAWAN : "menaungi"
+    JABATAN ||--o{ KARYAWAN : "diemban"
+    KARYAWAN ||--o{ PENGGAJIAN : "menerima"
+
+    PERUSAHAAN {
+        bigint id_perusahaan PK
+        varchar nama_perusahaan
+        varchar alamat
+        boolean aktif
+    }
+
+    DEPARTEMEN {
+        bigint id_departemen PK
+        varchar kode_departemen
+        varchar nama_departemen
+        text deskripsi
+    }
+
+    JABATAN {
+        bigint id_jabatan PK
+        varchar grade
+        numeric gaji_pokok
+        numeric tunjangan
+    }
+
+    KARYAWAN {
+        bigint id_karyawan PK
+        bigint id_perusahaan FK
+        bigint id_departemen FK
+        bigint id_jabatan FK
+        varchar nama_karyawan
+        date tanggal_bergabung
+        boolean aktif
+        numeric gaji_pokok
+    }
+
+    PENGGAJIAN {
+        bigint id_penggajian PK
+        bigint id_karyawan FK
+        varchar periode
+        numeric gaji_pokok
+        numeric tunjangan
+        numeric potongan
+        numeric gaji_bersih
+        varchar status
+    }
